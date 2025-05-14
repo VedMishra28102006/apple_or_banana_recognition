@@ -1,0 +1,9 @@
+{% if context["prediction"] %}
+<h3>Prediction: {{ context["prediction"] }}</h1>
+{% endif %}
+<form method="POST" enctype="multipart/form-data">
+  <label>Image:</label>
+  <input required type="file" name="image">
+  <br>
+  <button type="submit">Submit</button>
+</form>
